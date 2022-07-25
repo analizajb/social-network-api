@@ -1,13 +1,13 @@
 const { Schema, model, Types } = require("mongoose");
 
-const ReplySchema = new Schema(
+const ReactionSchema = new Schema(
   {
     // set custom id to avoid confusion with parent comment _id
-    replyId: {
+    reactionId: {
       type: Schema.Types.ObjectId,
       default: () => new Types.ObjectId(),
     },
-    replyBody: {
+    reactionBody: {
       type: String,
       required: true,
       trim: true,
@@ -34,7 +34,9 @@ const ThoughtSchema = new Schema(
     thoughtText: {
       type: String,
       required: true,
-      trim: true, // Must be between 1 and 280 characters
+      // Must be between 1 and 280 characters
+      min: 1,
+      max: 280,
     },
     createdAt: {
       type: Date,
@@ -44,10 +46,10 @@ const ThoughtSchema = new Schema(
     username: {
       type: String,
       required: true,
-      extends: User,
+      // extends: User,
     },
     // use ReplySchema to validate data for a reply
-    replies: [ReplySchema],
+    reactions: [ReactionSchema],
   },
   {
     toJSON: {
