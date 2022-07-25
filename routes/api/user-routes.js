@@ -12,7 +12,7 @@ const {
 router
   .route("/")
   .get(getAllUsers)
-  .post(createUsers);
+  .post(createUser);
 
 // Set up GET one, PUT, and DELETE at /api/users/:id
 router
