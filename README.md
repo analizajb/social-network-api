@@ -1,5 +1,7 @@
 # social-network-api
 
+An API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list.
+
 ## Summary
 
 This challenge caters to a social media startup. They requested for their social network to use a NoSQL database so that their website can handle large amounts of unstructured data. 
@@ -16,9 +18,10 @@ Users will be able to share their thoughts and reactions as well as connecting w
 
 ## Installation
 
-- Clone this repository.
+- Clone this repository from https://github.com/analizajb/social-network-api.
 - Run `npm i` to install required packages.
-- Use Insomnia for testing routes.
+- Run `npm start` in the terminal to start the server.
+- Once server has connected, use Insomnia for testing routes.
 
 ## Tools
 
@@ -27,16 +30,18 @@ Packages used include:
 - MongoDB
 - Express
 - Mongoose
-- date-fns
+- Moment.js
 
 ## Demonstration
 
-Will be found here after future development has been completed.
+<!-- <img src='./assets/Analiza B. - employee_tracker.gif' width=500 /> -->
+<br>
+
+Click [HERE](https://drive.google.com/file/d/1_okyJd5dw8RNOoZ1xAvWV5pgXQrcbqrw/view) for the full video demonstration.
+
 
 ## Future Development
 
-- Finish creating logic to routes according to controllers.
-- Testing done with Insomnia to ensure routes are working efficiently.
 - Application deletes a user's associated thoughts when the user is deleted.
 
 ## Contact
