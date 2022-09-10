@@ -34,7 +34,7 @@ Packages used include:
 
 ## Demonstration
 
-<!-- <img src='./assets/Analiza B. - employee_tracker.gif' width=500 /> -->
+<img src='./assets/Analiza B_ social-network-api.gif' width=500 />
 <br>
 
 Click [HERE](https://drive.google.com/file/d/1_okyJd5dw8RNOoZ1xAvWV5pgXQrcbqrw/view) for the full video demonstration.
